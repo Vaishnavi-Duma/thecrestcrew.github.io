@@ -1,0 +1,7 @@
+<IFModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^thecrestcrew.com [NC]
+RewriteRule ^(.*)$ http://www.thecrestcrew.com/$1 [L,R=301]
+</IFModule>
+
+Redirect 301 /index.php https://www.thecrestcrew.com/
